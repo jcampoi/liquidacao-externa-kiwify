@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gerar Liquidação Externa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfJHFjedh0k8KkH8dLttbdlESJht2Ue2CLFw&s"
+      alt="Kiwify Logo"
+      class="logo"
+    />
+
+    <h1>Gerar Liquidação Externa</h1>
+    <input type="text" id="title" placeholder="Título do arquivo (sem .xlsx)" />
+    <input type="file" id="file" accept=".xlsx" />
+    <button id="process">Processar e Baixar</button>
+
+    <div id="warning" class="warning" style="display: none;">
+      Necessário revisão da coluna “Empresa que gerou o contrato”
+    </div>
+
+    <p class="doc-link">
+      <a
+        href="https://www.notion.so/kiwify/Guia-de-como-exportar-listas-2b9f8680bdfa462a9becfb0c62e76966"
+        target="_blank"
+        rel="noopener"
+      >
+        Documento do processo
+      </a>
+    </p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
